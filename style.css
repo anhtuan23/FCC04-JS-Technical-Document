@@ -1,51 +1,66 @@
-body{
+body {
     margin: 0;
     padding: 0;
     color: rgb(48, 48, 48);
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 
-#container{
+#container {
     display: flex;
     flex-wrap: wrap;
 }
 
-#navbar{
+#navbar {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     flex-basis: 300px;
     flex-grow: 0;
-
     height: 100vh;
     overflow: auto;
-    
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
 }
 
-#navbar a{
+#navbar a {
     text-decoration: none;
     color: rgb(48, 48, 48);
     padding: 20px 30px;
-
     border-top: 1px solid black;
 }
 
-#navbar header{
+#navbar header {
     padding: 25px 10px;
     text-align: center;
     position: webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: white;    
+    background-color: white;
 }
 
-#main-doc{
+#main-doc {
     flex-grow: 1;
     flex-basis: 500px;
+    margin: 20px;
 }
 
-header{
+header {
     font-size: 1.8em;
+}
+
+.main-section>p {
+    padding-left: 20px;
+}
+
+.main-section ul {
+    padding-left: 60px;
+}
+
+.main-section pre {
+    padding: 0 20px;
+    margin: 10px 50px;
+    background-color: rgb(245, 245, 245);
+    white-space: pre;
 }
